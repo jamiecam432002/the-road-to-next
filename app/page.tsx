@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import { ticketsPath } from './_data/paths';
 
 export default function HomePage() {
 	return (
 		<div>
-			<h1 className='text-4xl'>Home Page</h1>
-			<Link href='/tickets' className='underline'>
+			<h2 className='text-lg'>Home Page</h2>
+			<Link href={ticketsPath()} className='text-sm underline'>
 				Go to tickets
 			</Link>
 		</div>
